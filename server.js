@@ -22,6 +22,10 @@ const port = process.env.PORT || 8000;
 
 app.use('/api/auth', routerAuth);
 
+app.use("/healthz", (req, res) => {
+    res.status(200).send("ok");
+});
+
 conectarDB();
 
 app.listen(port, () => {
