@@ -16,7 +16,7 @@ app.use(cookieParser());
 app.use(helmet());
 app.use(morgan('tiny'));
 app.use(express.json());
-app.use(cors({ credentials: true, origins: ['http://localhost:5173', 'https://client-mern-agosto.vercel.app/']
+app.use(cors({ credentials: true, origins: ['http://localhost:5173', 'https://client-mern-agosto.vercel.app']
 }));
 
 const port = process.env.PORT || 8000;
